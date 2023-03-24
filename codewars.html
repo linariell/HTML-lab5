@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+   
+    document.write("Задание 1");
+    document.write("<br>");
+        var a=Math.floor(Math.random()*2+1);
+        //document.write(a);
+        var h1='X';h2='X';
+        if (a==1) {h2='X'} else {h2='Y'};
+        var rez=h1+h2;
+        document.write(rez);
+        if (rez=="XX") {document.write("girl")} else {document.write("boy")}
+
+    document.write("<br>");
+    document.write("Задание 2");
+    document.write("<br>");
+    var a=Math.floor(Math.random()*10+1);
+    document.write("Дано число: "+a);
+    document.write("<br>");
+    if (a%2==0) {a*=8} else {a*=9}
+    document.write("Результат: "+a);
+
+    document.write("<br>");
+    document.write("Задание 3");
+    document.write("<br>");
+    var a=Math.floor(Math.random()*200+1);
+    document.write("Дано число: "+a);
+    document.write("<br>");
+    document.write(Math.pow(Math.round(Math.sqrt(a)), 2));
+
+    document.write("<br>");
+    document.write("Задание 4");
+    document.write("<br>");
+    var a=Math.floor(Math.random()*10);
+    //a=4;
+    document.write("Дано число: "+a);
+    document.write("<br>");
+    if(a == 0) { a=1;} else {(a=6*a*a+ 2) };
+    document.write("Результат: "+a);
+
+    document.write("<br>");
+    document.write("Задание 5");
+    document.write("<br>");
+    var cycle=Math.floor(Math.random()*60+7);
+    let today = new Date(2023, 02, 24),
+        last = new Date(2023, 01, 20);
+
+    var diff=(today - last) / (60 * 60 * 24 * 1000);
+    document.write("Цикл: "+cycle+"; Прошло: "+diff);
+    document.write("<br>");
+    if(diff<=cycle) {document.write("Задержки нет");} else {document.write("Задержка есть");}
+
+    document.write("<br>");
+    document.write("Задание 6");
+    document.write("<br>");
+    var str=" dasda asd   asdas    addsa  adasda    423  sdf  s"
+    document.write("Input: "+str);
+    
+    str=str.split(' ').join('')
+    document.write("<br>");
+    document.write("Output: "+str);
+    </script>
+</body>
+</html>
